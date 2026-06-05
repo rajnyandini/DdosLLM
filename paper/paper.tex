@@ -1,0 +1,64 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\begin{document}
+\title{From Text to Traffic: Repurposing Frozen Generative Models for DDoS Detection\\
+
+}
+
+\author{\IEEEauthorblockN{Naren Medarametla}
+\IEEEauthorblockA{\textit{School of Computer Science Engineering} \\
+\textit{Vellore Institute of Technology}\\
+Chennai, India \\
+naren.medarametla2023@vitstudent.ac.in}
+\and
+\IEEEauthorblockN{Rajnandini}
+\IEEEauthorblockA{\textit{School of Computer Science Engineering} \\
+\textit{Vellore Institute of Technology}\\
+Chennai, India \\
+email address or ORCID}
+}
+
+\maketitle
+
+\begin{abstract}
+Distributed Denial-of-Service (DDoS) attacks remain a critical cybersecurity threat, aiming to disrupt services by overwhelming 
+target networks with volumetric traffic floods. While machine learning models are increasingly deployed for Network Intrusion Detection 
+Systems (NIDS), they traditionally struggle with zero-shot generalization, frequently failing to detect novel, out-of-distribution 
+attack protocols due to rigid global feature scaling. Taking inspiration from the DoLLM framework, we propose an adapted architecture 
+that repurposes a frozen Large Language Model for cross protocol network traffic analysis. Our approach pairs a 1D-Convolutional temporal 
+flow tokenizer and Multihead Attention pooling with a localized sequence-level normalization technique. By normalizing network flows 
+strictly relative to their immediate temporal windows rather than a global dataset baseline, the model achieves scale-invariant reasoning 
+to successfully identify the structural physics of malicious bursts. Evaluated on completely unseen attack protocols, our adapted 
+architecture demonstrates robust cross protocol generalization, achieving a zero-shot F1 score of 0.9922.
+\end{abstract}
+
+\begin{IEEEkeywords}
+Deep Learning, Large Language Models, Distributed Denial-of-Service, Network Security, Network Intrusion Detection Systems
+\end{IEEEkeywords}
+
+\section{Introduction}
+
+\section{Literature Review}
+
+\section{Methodology}
+
+\section{Results}
+
+\section{Discussions}
+
+\section{References}
+
+% \begin{thebibliography}{00}
+
+% \end{thebibliography}
+\vspace{12pt}
+
+\end{document}
